@@ -25,7 +25,7 @@ const Create = () => {
     e.preventDefault();
     if (data) {
       const obj = { ...data };
-      const id = Object.keys(data).length || 1;
+      const id = Object.keys(data).length + 1;
       obj[id] = { url: url, fields: fields };
       setData(obj);
       history.back();
